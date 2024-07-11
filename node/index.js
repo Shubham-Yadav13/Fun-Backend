@@ -2,9 +2,8 @@
 const express = require("express");
 const app = express();
 require('dotenv').config(); 
-const port = 4000;
 console.log('hiii hellow world')
-
+const port = process.env.PORT || 4000;
 //console.log(process.env,'-------------') // remove this after you've confirmed it is working
 
 app.get('/',(req,res)=>{
